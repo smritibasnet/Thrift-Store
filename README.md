@@ -9,5 +9,6 @@ Thrift-Store
 
 ## Done:
 
-- [x]  Task 1
-- [x]  Task 2
+:white_check_mark: Task 1
+
+:white_check_mark:  Task 2
