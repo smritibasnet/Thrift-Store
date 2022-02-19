@@ -1,26 +1,27 @@
 const products = [
   {
     _id: '1',
-    name: 'Asian Indian Pakistani Party Wear',
+    name: 'Black Body Con',
     image: '/images/partywear.jpg',
     description:
-      'Asian Indian Pakistani Party Wear is in good condition and has been worn once by its previous owner ',brand: 'FabIndia',
+      'Black Body Con Party Wear is in good condition and has been worn once by its previous owner ',
+    brand: 'FabIndia',
     category: 'Party Wear',
     price: 3999,
     rating: 4.5,
-    Comments: 12,
+    numReviews: 12,
   },
   {
     _id: '2',
-    name: 'Yellow Sparkly Body Con',
-    image: '/images/cocktailwear.jpg',
+    name: 'Summer Wear One-Piece',
+    image: '/images/summerWear.jpg',
     description:
-      'Yellow Sparkly Body Con is in best condition and has been worn by Shrinkhala Khatiwada former Miss Nepal in a promotion event',
+      'Summer Wear is in best condition and has been worn by former Miss Nepal in a promotion event',
     brand: 'Urban Girl',
-    category: 'Cocktail Wear',
+    category: 'Summer Wear',
     price: 6999,
     rating: 4.0,
-    Comments: 8,
+    numReviews: 8,
   },
   {
     _id: '3',
@@ -32,7 +33,7 @@ const products = [
     category: 'One-piece',
     price: 929.99,
     rating: 3,
-    Comments: 12,
+    numReviews: 12,
   },
   {
     _id: '4',
@@ -44,7 +45,7 @@ const products = [
     category: 'One-piece',
     price: 3999,
     rating: 5,
-    Comments: 12,
+    numReviews: 12,
   },
   {
     _id: '5',
@@ -55,7 +56,7 @@ const products = [
     category: 'Prom Dress',
     price: 10000,
     rating: 5,
-    Comments: 10,
+    numReviews: 10,
   },
   {
     _id: '6',
@@ -67,7 +68,31 @@ const products = [
     category: 'One-piece',
     price: 999.99,
     rating: 4,
-    Comments: 12,
+    numReviews: 12,
+  },
+  {
+    _id: '7',
+    name: 'Red One-Piece',
+    image: '/images/reddress.jpg',
+    description:
+      'Black Gown is in good condition',
+    brand: 'Juniper',
+    category: 'Gown',
+    price: 5099.99,
+    rating: 4.5,
+    numReviews: 14,
+  },
+  {
+    _id: '8',
+    name: 'Yellow One-piece',
+    image: '/images/yellowdress.png',
+    description:
+      'Yellow One-piece is in good condition',
+    brand: 'Fashion Australia',
+    category: 'Casual Wear',
+    price: 1999.99,
+    rating: 4.5,
+    numReviews: 6,
   },
 ]
 
