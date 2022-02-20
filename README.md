@@ -4,11 +4,11 @@ Thrift-Store
 
 ## To-do:
 
-- [ ] Task 1
-- [ ] Task 2
+- [ ] Database Connection
+- [ ] Backend
 
 ## Done:
 
-:white_check_mark: Task 1
+:white_check_mark: Frontend on process
 
 :white_check_mark:  Task 2
