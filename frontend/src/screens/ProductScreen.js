@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import products from '../products'
 import Rating from '../components/Rating'
 import {
@@ -14,13 +14,15 @@ import {
 import product from '../components/Product'
 
 const ProductScreen = ({ match }) => {
-  // const product = products.find(p => p._id === match.params.id)
+	const params = useParams()
+	const product = products.find(p => p._id === params.id)
+	
   return (
     <>
       <Link className='btn btn-secondary my-3' to='/'>
         Go Back
       </Link>
-      {/* <Row>
+      <Row>
         <Col md={6}>
           <Image src={product.image} alt={product.name} />
         </Col>
@@ -31,7 +33,7 @@ const ProductScreen = ({ match }) => {
             </ListGroupItem>
           </ListGroup>
         </Col>
-      </Row> */}
+      </Row>
     </>
   )
 }
