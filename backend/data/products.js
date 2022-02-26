@@ -29,8 +29,7 @@ const products = [
     _id: '3',
     name: 'Maroon One-Piece',
     image: '/images/maroondress.jpg',
-    description:
-      'Maroon One-Piece is in good condition.',
+    description: 'Maroon One-Piece is in good condition.',
     brand: 'Unknown',
     category: 'One-piece',
     price: 929.99,
@@ -55,7 +54,7 @@ const products = [
     _id: '5',
     name: 'Blue Prom Dress',
     image: '/images/promdress.jpg',
-    description:'Blue Prom Dress is in its best condition',
+    description: 'Blue Prom Dress is in its best condition',
     brand: 'Boutique Item',
     category: 'Prom Dress',
     price: 10000,
@@ -67,8 +66,7 @@ const products = [
     _id: '6',
     name: 'Light Green Spring Wear',
     image: '/images/springwear.jpg',
-    description:
-      'Spring Wear is in good condition',
+    description: 'Spring Wear is in good condition',
     brand: 'Unknown',
     category: 'One-piece',
     price: 999.99,
@@ -80,8 +78,7 @@ const products = [
     _id: '7',
     name: 'Red One-Piece',
     image: '/images/reddress.jpg',
-    description:
-      'Red Dress is in good condition',
+    description: 'Red Dress is in good condition',
     brand: 'Juniper',
     category: 'Gown',
     price: 2099.99,
@@ -93,8 +90,7 @@ const products = [
     _id: '8',
     name: 'Yellow One-piece',
     image: '/images/yellowdress.png',
-    description:
-      'Yellow One-piece is in good condition',
+    description: 'Yellow One-piece is in good condition',
     brand: 'Fashion Australia',
     category: 'Casual Wear',
     price: 1999.99,
@@ -104,4 +100,4 @@ const products = [
   },
 ]
 
-export default products
+module.exports = products

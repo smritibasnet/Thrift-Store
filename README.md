@@ -9,6 +9,6 @@ Thrift-Store
 
 ## Done:
 
-:white_check_mark: Frontend on process
+:white_check_mark: Frontend of product details
 
-:white_check_mark:  Task 2
+:white_check_mark: Backend on process
