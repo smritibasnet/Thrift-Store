@@ -5,10 +5,10 @@ Thrift-Store
 ## To-do:
 
 - [ ] Database Connection
-- [ ] Backend
+- [ ] Backend Completion
 
 ## Done:
 
 :white_check_mark: Frontend of product details
 
-:white_check_mark: Backend on process
+:white_check_mark: Fetched products from React
