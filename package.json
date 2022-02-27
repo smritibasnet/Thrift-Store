@@ -4,10 +4,18 @@
     "bootswatch": "^5.1.3",
     "express": "^4.17.3"
   },
+  "scripts": {
+    "start": "node backend/server",
+    "server" :"nodemon backend/server",
+    "client" : "yarn start --prefix frontend",
+    "dev" : "concurrently \"yarn run server\" \"yarn run client\""
+  },
   "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15",
     "rimraf": "^3.0.2"
   },
-  "name": "thriftStore",
+  "name": "thriftstore",
   "version": "1.0.0",
   "description": "Final Year Project on thrift shopping cart app",
   "main": "server.js",
