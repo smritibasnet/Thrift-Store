@@ -11,7 +11,7 @@ const Header = () => {
     </LinkContainer>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse className="justify-content-end">
-      <Nav >
+      <Nav>
       <LinkContainer to='/cart'>
         <Nav.Link><i className='fas fa-shopping-cart'></i></Nav.Link>
         </LinkContainer>

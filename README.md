@@ -13,4 +13,4 @@ Thrift-Store
 
 :white_check_mark: Fetched products from React
 
-Update on: 27th Feb, 2022
+Updated on: 27th Feb, 2022
