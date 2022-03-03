@@ -2,7 +2,7 @@ const products = [
   {
     _id: '1',
     name: 'Black Body Con',
-    image: '/images/partywear.jpg',
+    image: '/images/partywear.png',
     description:
       'Black Body Con Party Wear is in good condition and has been worn once by its previous owner ',
     brand: 'FabIndia',
@@ -15,7 +15,7 @@ const products = [
   {
     _id: '2',
     name: 'Summer Wear One-Piece',
-    image: '/images/summerWear.jpg',
+    image: '/images/summerWearr.png',
     description:
       'Summer Wear is in best condition and has been worn by former Miss Nepal in a promotion event',
     brand: 'Urban Girl',
@@ -28,7 +28,7 @@ const products = [
   {
     _id: '3',
     name: 'Maroon One-Piece',
-    image: '/images/maroondress.jpg',
+    image: '/images/maroondresss.png',
     description: 'Maroon One-Piece is in good condition.',
     brand: 'Unknown',
     category: 'One-piece',
@@ -40,7 +40,7 @@ const products = [
   {
     _id: '4',
     name: 'Pink One-piece',
-    image: '/images/pinkdress.jpg',
+    image: '/images/pinkdresss.png',
     description:
       'Pink One-piece has never been worn by its previous owner and is brand new',
     brand: 'Unknown ',
@@ -53,7 +53,7 @@ const products = [
   {
     _id: '5',
     name: 'Blue Prom Dress',
-    image: '/images/promdress.jpg',
+    image: '/images/promdresss.png',
     description: 'Blue Prom Dress is in its best condition',
     brand: 'Boutique Item',
     category: 'Prom Dress',
@@ -65,7 +65,7 @@ const products = [
   {
     _id: '6',
     name: 'Light Green Spring Wear',
-    image: '/images/springwear.jpg',
+    image: '/images/springwearr.png',
     description: 'Spring Wear is in good condition',
     brand: 'Unknown',
     category: 'One-piece',
@@ -77,7 +77,7 @@ const products = [
   {
     _id: '7',
     name: 'Red One-Piece',
-    image: '/images/reddress.jpg',
+    image: '/images/reddresss.png',
     description: 'Red Dress is in good condition',
     brand: 'Juniper',
     category: 'Gown',
@@ -89,7 +89,7 @@ const products = [
   {
     _id: '8',
     name: 'Yellow One-piece',
-    image: '/images/yellowdress.png',
+    image: '/images/yellowdresss.png',
     description: 'Yellow One-piece is in good condition',
     brand: 'Fashion Australia',
     category: 'Casual Wear',
@@ -97,7 +97,7 @@ const products = [
     countInStock: 1,
     rating: 4.5,
     numReviews: 6,
-  },
+  }
 ]
 
 export default products

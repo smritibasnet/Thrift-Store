@@ -46,8 +46,8 @@ const ProductScreen = ({ match }) => {
                 text={`${product.numReviews} reviews`}
               />
             </ListGroupItem>
-            <ListGroupItem>Price: Rs.{product.price}</ListGroupItem>
-            <ListGroupItem>Description: {product.description}</ListGroupItem>
+            <ListGroupItem><strong>Price:</strong> Rs.{product.price}</ListGroupItem>
+            <ListGroupItem><strong>Description:</strong> <br/>{product.description}</ListGroupItem>
           </ListGroup>
         </Col>
         <Col>
