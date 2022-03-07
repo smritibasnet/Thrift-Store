@@ -2,6 +2,7 @@ import express from 'express'
 import products from './data/products.js'
 import dotenv from 'dotenv'
 
+import knex from './database.js'
 dotenv.config()
 
 const app = express()
@@ -17,6 +18,13 @@ app.get('/api/products', (req, res) => {
 app.get('/api/products/:id', (req, res) => {
   const product = products.find((p) => p._id === req.params.id)
   res.json(product)
+})
+
+app.get('/api/users', async (req, res) => {
+  const users = await knex('users').select('*')
+  console.log(users)
+
+  res.json(users)
 })
 
 const PORT = process.env.PORT || 5000
