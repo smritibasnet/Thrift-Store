@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@babel/node": "^7.16.8",
     "axios": "^0.26.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
@@ -9,8 +8,10 @@
     "mysql2": "^2.3.3"
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.5",
-    "babel-node": "^0.0.1-security",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
     "concurrently": "^7.0.0",
     "nodemon": "^2.0.15",
     "rimraf": "^3.0.2",
@@ -24,11 +25,11 @@
   "author": "Smriti Basnet",
   "license": "MIT",
   "scripts": {
-    "start:dev": "nodemon --watch .env --watch src --exec babel-node src --source-maps",
+    "knex": "babel-node node_modules/.bin/knex",
+    "start:dev": "nodemon --watch .env --watch src --exec babel-node src",
     "make:seeder": "yarn knex seed:make --knexfile src/knexfile.js",
     "make:migration": "yarn knex migrate:make --knexfile src/knexfile.js",
     "migrate": "yarn knex migrate:latest --knexfile src/knexfile.js",
     "rollback": "yarn knex migrate:rollback --knexfile src/knexfile.js"
-  },
-  "type": "module"
+  }
 }
