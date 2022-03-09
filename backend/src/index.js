@@ -3,6 +3,7 @@ import products from './data/products.js'
 import dotenv from 'dotenv'
 
 import knex from './database.js'
+
 dotenv.config()
 
 const app = express()
