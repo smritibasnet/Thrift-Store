@@ -1,0 +1,42 @@
+main {
+    min-height: 80vh;
+}
+
+h3 {
+    padding: 1rem 0;
+}
+
+.rating span {
+    margin: 0.1rem;
+}
+
+.rounded:hover {
+    color: #FFFFFF !important;
+    background-color: #7fc6b2;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* Alert */
+.success {
+    color:#20a020;
+}
+
+.error{
+    color: #a02020;
+}
+
+.alert{
+    padding: 1rem;
+    border: 0.1rem solid transparent;
+    border: 0.5rem;
+}
+
+.alert-info{
+    color: #2020a0;
+    background-color: #e0e0ff;
+}
+
+.alert-danger{
+    color: #a02020;
+    background-color: #ffe0e0e0;
+}
