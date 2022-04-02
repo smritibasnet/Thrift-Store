@@ -14,7 +14,7 @@
     "sequelize-cli": "^6.4.1"
   },
   "scripts": {
-    "start": "node backend/server",
+    "start": "nodemon --watch backend --exec node backend/server",
     "server": "nodemon backend/server",
     "client": "yarn start --prefix frontend",
     "dev": "concurrently \"yarn run server\" \"yarn run client\""
