@@ -10,6 +10,7 @@ const Header = () => {
           <LinkContainer to='/'>
             <Navbar.Brand>
               <img
+                style={{ transform: 'scale(2)' }}
                 src={require('../logo/logo.png')}
                 width='100'
                 height='50'
