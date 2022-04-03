@@ -7,15 +7,17 @@ import {
   PRODUCT_LIST_REQUEST,
   PRODUCT_LIST_SUCCESS,
 } from '../constants/productConstants'
+import { api } from '../request'
 
 export const listProducts = () => async (dispatch) => {
   dispatch({
     type: PRODUCT_LIST_REQUEST,
   })
 
-  await axios
-    .get('/api/products')
+  await api
+    .get(`products`)
     .then((res) => {
+      
       dispatch({ type: PRODUCT_LIST_SUCCESS, payload: res?.data })
     })
     .catch((error) => {
@@ -23,15 +25,16 @@ export const listProducts = () => async (dispatch) => {
     })
 }
 
+
+
 export const listProductsByID = (id) => async (dispatch) => {
   dispatch({
-    type: PRODUCT_DETAIL_LIST_REQUEST
+    type: PRODUCT_DETAIL_LIST_REQUEST,
   })
 
-  await axios
-    .get(`/api/products/${id}`)
+  await api
+    .get(`products/${id}`)
     .then((res) => {
-     
       dispatch({ type: PRODUCT_DETAIL_LIST_SUCCESS, payload: res?.data })
     })
     .catch((error) => {

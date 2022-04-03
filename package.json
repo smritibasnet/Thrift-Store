@@ -2,6 +2,7 @@
   "dependencies": {
     "axios": "^0.26.0",
     "bootswatch": "^5.1.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "env": "^0.0.2",
     "express": "^4.17.3",

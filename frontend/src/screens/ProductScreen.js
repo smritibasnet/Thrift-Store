@@ -30,7 +30,7 @@ const ProductScreen = ({ match }) => {
   }, [params?.id, dispatch])
   const navigate = useNavigate()
   const addToCartHandler = () => {
-    navigate(`/cart/${params?.id}?qty={qty}`)
+    navigate(`/cart/${params?.id}?qty=${qty}`)
   }
 
   return (
