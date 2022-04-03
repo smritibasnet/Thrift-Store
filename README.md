@@ -2,7 +2,7 @@
 
 Thrift-Store
 
-- Added Redux
+
 ## On-going:
 
 - [ ] Database Connection
