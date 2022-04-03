@@ -2,10 +2,10 @@
 
 Thrift-Store
 
+- Added Redux
 ## On-going:
 
 - [ ] Database Connection
-- [ ] Implementing Redux 
 - [ ] Adding Functionalities Shopping Cart 
 
 ## To-be-Started:
@@ -37,5 +37,7 @@ Thrift-Store
 :white_check_mark: Nodemon and concurrently
 
 :white_check_mark: ES Module in Node.js
+
+:white_check_mark: Added Redux
 
 Updated on: 3rd March, 2022
