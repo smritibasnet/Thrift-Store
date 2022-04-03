@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useParams, useNavigate } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import Rating from '../components/Rating'
 import { useDispatch, useSelector } from 'react-redux'
 import {
@@ -15,6 +15,7 @@ import {
 import { listProductsByID } from '../actions/productsAction'
 import LoadingBox from '../components/LoadingBox'
 import { MessageBox } from '../components/MessageBox'
+import { toast } from 'react-toastify'
 
 const ProductScreen = ({ match }) => {
   const params = useParams()
@@ -28,9 +29,9 @@ const ProductScreen = ({ match }) => {
       dispatch(listProductsByID(params?.id))
     }
   }, [params?.id, dispatch])
-  const navigate = useNavigate()
   const addToCartHandler = () => {
-    navigate(`/cart/${params?.id}?qty=${qty}`)
+    //api handling
+    toast.success('Product has been added to cart', { toastId: params?.id })
   }
 
   return (
