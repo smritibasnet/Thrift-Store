@@ -1,0 +1,32 @@
+{
+  "name": "thriftstore",
+  "version": "1.0.0",
+  "description": "thrift store backend",
+  "main": "server.js",
+  "repository": "https://github.com/smritibasnet/Thrift-Store",
+  "author": "Smriti",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:g:migration": "sequelize-cli migration:generate --name",
+    "db:create": "sequelize-cli db:create",
+    "db:g:seed": "sequelize-cli seed:generate --name",
+    "db:seeds": "sequelize-cli db:seed:all"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "env": "^0.0.2",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.18.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.4.1"
+  }
+}

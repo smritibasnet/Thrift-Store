@@ -1,18 +1,25 @@
-import express from 'express'
-import cors from 'cors'
-import dotenv from 'dotenv'
-import products from './data/products.js'
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 5000
+const cors = require('cors')
+const dotenv = require('dotenv')
+const adminRoutes = require('./routes/admin')
+const storeRoutes = require('./routes/store')
+
+const bodyParser = require('body-parser')
 
 dotenv.config()
 
-const app = express()
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
-app.get('/', (req, res) => {
-  res.send('API is running...')
-})
 
-app.get('/api/products', (req, res) => {
-  res.json(products)
+app.use('/admin', adminRoutes)
+app.use(storeRoutes)
+app.use((req, res, next) => {
+  res.status(404).send('<h1>Page Not Found</h1>')
+})
+app.get('/api/products', async (req, res) => {
+  const allProducts = await products.res.json()
 })
 
 app.get('/api/products/:id', (req, res) => {
