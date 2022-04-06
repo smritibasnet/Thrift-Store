@@ -2,11 +2,15 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { listProductsByID } from '../actions/productsAction'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
- const CartScreen = (props) => {
+const CartScreen = ({ match, location, navigate }) => {
   const params = useParams()
   const dispatch = useDispatch()
+  const cart = useSelector((state) => state.cart)
+  const { cartItems } = cart
+
+  console.log(cartItems)
   useEffect(() => {
     if (params?.id) {
       dispatch(listProductsByID(params?.id))
@@ -19,9 +23,7 @@ import { useDispatch } from 'react-redux'
   return (
     <div>
       <h1>Cart Screen</h1>
-      <p>
-        Add to Cart: ProductId: {params?.id} 
-      </p>
+      <p>Add to Cart: <br /> ProductId: {params?.id}</p>
     </div>
   )
 }

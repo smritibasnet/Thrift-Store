@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Rating from '../components/Rating'
 import { useDispatch, useSelector } from 'react-redux'
 import {
@@ -23,7 +24,7 @@ const ProductScreen = ({ match }) => {
   const { productDetail } = useSelector((state) => state.productList)
   const [qty, setQty] = useState(1)
   const { loading, detail, error } = productDetail
-
+  const navigate = useNavigate()
   useEffect(() => {
     if (params?.id) {
       dispatch(listProductsByID(params?.id))
@@ -31,7 +32,9 @@ const ProductScreen = ({ match }) => {
   }, [params?.id, dispatch])
   const addToCartHandler = () => {
     //api handling
+
     toast.success('Product has been added to cart', { toastId: params?.id })
+    navigate(`/cart/${params?.id}`)
   }
 
   return (
